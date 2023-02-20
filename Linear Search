@@ -1,0 +1,41 @@
+//Linear search in the array//
+#include <stdio.h>
+#define N 100
+int main()
+{
+    int i,n,a[N],k,c=0;
+    printf("Enter the number of the terms\n");
+    scanf("%d",&n);
+    printf("Enter the elements\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("Printing the elements\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",a[i]);
+    }
+    printf("\n");
+    printf("Enter the Number you want to search\n");
+    scanf("%d",&k);
+    for(i=0;i<n;i++)
+    {
+        if(k==a[i])
+        {
+            c++;
+            break;
+        }
+    }
+    if(c>0)
+    {
+        printf("Element found in the array");
+    }
+    else
+    {
+        printf("Not Found");
+    }
+    return 0;
+}
+
+
